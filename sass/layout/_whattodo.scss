@@ -5,10 +5,6 @@
   display: flex;
 }
 
-.whatdo__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .whatdo__caption {
   font-weight: bold;
   font-size: 36px;
@@ -21,6 +17,9 @@
 
 .whatdo__item {
   position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .whatdo__img {

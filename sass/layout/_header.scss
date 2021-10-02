@@ -1,26 +1,23 @@
 .header {
   background: var(--line-bg-color);
   border: 1px solid #ececec;
-}
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.navigation__list {
-  display: flex;
-}
-.navigation__item {
-  position: relative;
-}
-
-.navigation__item:not(:last-child) {
-  margin-right: 50px;
+  & .container {
+    display: flex;
+    align-items: center;
+  }
+  & .navigation {
+    display: flex;
+    align-items: center;
+  }
+  & .navigation__list {
+    display: flex;
+  }
+  & .navigation__item {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
 
 .navigation__text {
@@ -43,64 +40,32 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.navigation__link:hover,
-.navigation__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact-nav {
   display: flex;
   margin-left: auto;
-}
-
-.contact-nav > .contact-nav__item:not(:last-child) {
-  margin-right: 50px;
+  & > .contact-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contact-nav__link {
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-nav .contact-nav__link {
   color: var(--main-text-color);
-}
-
-.contact-nav__link:hover,
-.contact-nav__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact-nav__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.header-mail {
-  display: block;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color);
-  margin-right: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.header-mail:hover,
-.header-mail:focus {
-  color: var(--accent-color);
-}
-
-.header-tel {
-  display: block;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
